@@ -98,6 +98,8 @@
   
   section {
     height: 100vh;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -114,16 +116,17 @@
     margin-bottom: 40px;
   }
 
-  html {
+  html,body {
     scroll-behavior: smooth;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin:0;
+    padding:0;
   }
 
   .section {
-    position: absolute;
-    left:0;
-    right:0;
-    width: 100vw;
+    position: relative;
+    padding: 0;
+    margin: 0;
     height: 800px;
     display: flex;
     justify-content: center;
@@ -132,21 +135,19 @@
     border-bottom: 5px solid black;
     transition: transform 1s ease;
   }
-
-  .section:hover {
-    transform: scale(1.1);
-  }
   
   .background-image {
     position: absolute;
     top: 0;
     left: 0;
+    padding: 0;
+    margin: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
     background-image: url("/assets/basketballbackground.jpg");
     background-size: cover;
     filter: blur(5px);
+    transition: transform 1s ease;
   }
   
   .background-image::before {
@@ -159,6 +160,10 @@
     background: rgba(0, 0, 0, 0.5);
   }
 
+  .background-image:hover{
+    transform: scale(1.1);
+  }
+
   .foreground-image {
     position: absolute;
     bottom: 0;
@@ -168,8 +173,13 @@
     height: auto;
     max-width: 50%;
     max-height: 50%;
+    transition: transform 1s ease;
   }
   
+  .foreground-image:hover{
+    transform: scale(1.1);
+  }
+
   .content {
     text-align: center;
     z-index: 1;
@@ -190,8 +200,182 @@
     margin-bottom: 20px;
   }
 
-  img{
+  .hundred{
     height: 100px
   }
   
-  
+  .bios{
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .bios::before{
+    opacity: 5%;
+  }
+
+  /* Apply margin to child elements (each 4 bios) */
+  .bios > * {
+    margin: 30px 0;
+}
+
+.bio-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  margin-left: 100px;
+  margin-right: 100px;
+  width: 60%;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.bio-container:nth-child(odd) {
+  margin-right: auto;
+}
+
+.bio-container:nth-child(even) {
+  margin-left: auto;
+}
+
+.bio-image {
+  margin-right: 20px;
+  text-align: center;
+  transition: transform 1s ease;
+  margin-left: 30px;
+  padding: 0;
+  position: relative;
+  flex: 0 0 auto;
+  max-height: 100%;
+  overflow: hidden;
+}
+
+.bio-text:nth-child(even)::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -10px; /* Position line to the left of the .bio-text element */
+  width: 1px;
+  background-color: #ccc;
+  margin: -10px;
+}
+
+.bio-container:nth-child(2n) .bio-text::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 10px; /* Position line to the left of the .bio-text element */
+  width: 1px;
+  background-color: #ccc;
+  margin: -20px;
+}
+
+.bio-image:hover{
+  transform: scale(1.1);
+}
+
+.bio-image:nth-child(even) {
+  margin-right: 0;
+  margin-left: 20px;
+
+}
+
+.bio-image img {
+  display: inline-block;
+  max-height: 400px;
+  width: auto;
+  max-width: 100%;
+  border-radius: 50%;
+  border: 2px solid black;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.7);
+  margin: 15px;
+}
+
+.bio-text {
+  flex: 2;
+  text-align: justify;
+  padding: 20px;
+  max-width: 75%;
+  margin-left: 20px; /* Adjust margin to match */
+  position: relative;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.bio-text:nth-child(even) {
+  order: 1;
+}
+
+.bio-text h1 {
+  font-size: 48px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight:normal;
+}
+
+.bio-text h2 {
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 0px;
+  margin-left: 10px;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.bio-text p {
+  font-size: 18px;
+  line-height: 1.4em;
+  margin-bottom: 0;
+}
+
+
+.bio-links i{
+  transition: transform 1s ease;
+  font-size: 30px;
+  padding-right: 10px;
+  padding-top: 10px;
+  color: rgb(209, 223, 159);
+}
+.bio-links i:hover {
+  transform: scale(1.1);
+  color:
+}
+
+body{
+	margin:0;
+	padding:0;
+    background: #363b88 url('assets/background.png') repeat 0 0;
+	-webkit-animation: 10s linear 0s normal none infinite animate;
+	-moz-animation: 10s linear 0s normal none infinite animate;
+	-ms-animation: 10s linear 0s normal none infinite animate;
+	-o-animation: 10s linear 0s normal none infinite animate;
+	animation: 10s linear 0s normal none infinite animate;
+ 
+}
+ 
+@-webkit-keyframes animate {
+	from {background-position:0 0;}
+	to {background-position: 500px 0;}
+}
+ 
+@-moz-keyframes animate {
+	from {background-position:0 0;}
+	to {background-position: 500px 0;}
+}
+ 
+@-ms-keyframes animate {
+	from {background-position:0 0;}
+	to {background-position: 500px 0;}
+}
+ 
+@-o-keyframes animate {
+	from {background-position:0 0;}
+	to {background-position: 500px 0;}
+}
+ 
+@keyframes animate {
+	from {background-position:0 0;}
+	to {background-position: 500px 0;}
+}
