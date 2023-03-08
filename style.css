@@ -110,27 +110,51 @@
   #home::before {
     content: '';
     display: block;
-    height:      100px;
-    margin-top: -100px;
+    height:      200px;
+    margin-top: -200px;
     visibility: hidden;
   }
 
   #aboutus::before {
     content: '';
     display: block;
-    height:      100px;
-    margin-top: -100px;
+    height:      150px;
+    margin-top: -150px;
     visibility: hidden;
   }
 
   #abstract::before {
     content: '';
     display: block;
-    height:      100px;
-    margin-top: -100px;
+    height:      300px;
+    margin-top: -220px;
     visibility: hidden;
   }
   
+  #development::before {
+    content: '';
+    display: block;
+    height:      300px;
+    margin-top: -220px;
+    visibility: hidden;
+  }
+
+  #evidencebook::before {
+    content: '';
+    display: block;
+    height:      300px;
+    margin-top: -220px;
+    visibility: hidden;
+  }
+
+  #technology::before {
+    content: '';
+    display: block;
+    height:      300px;
+    margin-top: -220px;
+    visibility: hidden;
+  }
+
   h2 {
     font-size: 48px;
     margin-bottom: 20px;
@@ -170,7 +194,6 @@
     height: 100%;
     background-image: url("/assets/basketballbackground.jpg");
     background-size: cover;
-    filter: blur(5px);
     transition: transform 1s ease;
   }
   
@@ -211,7 +234,7 @@
   
   .title {
     color: white;
-    font-size: 80px;
+    font-size: 100px;
     font-weight: bold;
     color: linear;
     margin-bottom: 20px;
@@ -220,7 +243,7 @@
   
   .description {
     color: white;
-    font-size: 40px;
+    font-size: 50px;
     margin-bottom: 20px;
   }
 
@@ -229,8 +252,8 @@
   }
   
   .title-bio h1{
-    font-weight:500;
     color: white;
+    font-weight:500;
     font-size: 32px;
     display: flex;
     justify-content: center;
@@ -242,7 +265,6 @@
 
   .title-bio h2{
     font-weight:500;
-    color: white;
     font-size: 150px;
     display: flex;
     justify-content: center;
@@ -620,6 +642,7 @@ body{
 }
 
 .abstract-text h1{
+  color:rgb(209, 223, 159);
   font-weight: normal;
   font-size: 80px;
   margin-bottom: 0;
@@ -660,4 +683,166 @@ body{
 @keyframes animate2 {
 	from {background-position:0 0;}
 	to {background-position: -500px 0;}
+}
+
+.development{
+  padding: 0px; 
+  color: white;
+}
+.development h2{
+  font-weight:500;
+  font-size: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 1.5px;
+  margin: 0px;
+  padding: 0;
+  color: rgb(209, 223, 159);
+  -webkit-animation: breathing 3s ease-out infinite normal;
+  animation: breathing 3s ease-out infinite normal;
+  -webkit-font-smoothing: antialiased;
+}
+
+.evidencebook{
+  padding: 0px;
+  color: white;
+}
+.evidencebook h2{
+  font-weight:500;
+  font-size: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 1.5px;
+  margin: 0px;
+  padding: 0;
+  color: rgb(209, 223, 159);
+  -webkit-animation: breathing 3s ease-out infinite normal;
+  animation: breathing 3s ease-out infinite normal;
+  -webkit-font-smoothing: antialiased;
+}
+
+.evidencebook h3{
+  font-weight:500;
+  font-size: 40px;
+  letter-spacing: 1.5px;
+  padding-left: 50px;
+  padding-bottom: 30px;
+}
+
+.evidencebook h4{
+  font-weight:500;
+  font-size: 32px;
+  letter-spacing: 1.5px;
+  padding-left: 120px;
+  color:rgb(209, 223, 159)
+}
+
+.evidencebook{
+	margin:0;
+  padding-top: 20px;
+  padding-bottom: 100px;
+  background: #363b88 url('assets/background2.png') repeat 0 0;
+	-webkit-animation: 10s linear 0s normal none infinite animate2;
+	-moz-animation: 10s linear 0s normal none infinite animate2;
+	-ms-animation: 10s linear 0s normal none infinite animate2;
+	-o-animation: 10s linear 0s normal none infinite animate2;
+	animation: 10s linear 0s normal none infinite animate2;
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+}
+
+.evidencebook button {
+  text-align:left;
+  padding-left:20px ;
+  position: relative;
+  height: 60px;
+  width: calc(25% - 10px);
+  background: linear-gradient(to right, #3a5f99, #0074D9);
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+  letter-spacing: 2px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.7);
+  transition: transform 5s ease;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  grid-gap: 20px;
+  align-content: center;
+  padding-left: 150px;
+  padding-right: 150px;
+  justify-content: space-evenly
+}
+
+.evidencebook button:hover{
+  color: lightgray;
+  border: 2px solid white;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.evidencebook i {
+  color:rgb(209, 223, 159);
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+}
+
+.evidencebook button .separator {
+  position: absolute;
+  top: 0;
+  right: 70px;
+  height: 100%;
+  width: 5px;
+  background-color: rgb(209, 223, 159);
+  transform: skewX(-30deg); /* to create the slanted line */
+  z-index: -2;
+}
+
+.evidencebook button p{
+  position: absolute;
+  top: 0;
+  left: 0px;
+}
+
+.evidencebook button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -20px;
+  height: 100%;
+  width: 90px;
+  background-color: rgb(39, 35, 75); /* new background color */
+  transform: skewX(-30deg);
+  z-index: -1;
+}
+
+.technology{
+  padding: 0px;
+  color: white;
+}
+.technology h2{
+  font-weight:500;
+  font-size: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 1.5px;
+  margin: 0px;
+  padding: 0;
+  color: rgb(209, 223, 159);
+  -webkit-animation: breathing 3s ease-out infinite normal;
+  animation: breathing 3s ease-out infinite normal;
+  -webkit-font-smoothing: antialiased;
 }
