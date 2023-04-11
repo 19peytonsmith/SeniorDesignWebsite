@@ -334,6 +334,28 @@
     transform: scale(0.9);
   }
 }
+  .group-photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+  }
+  .group-photo img{
+    width: 1500px;
+    border-radius: 1%;
+    border: 2px solid black;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.7);
+  }
+
+  .group-photo p{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    font-size: 24px;
+  }
 
   .bios{
     padding: 50px;
@@ -909,15 +931,6 @@ body{
   margin-top: 50px;
 }
 
-.xcode-container .left-side p{
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-style: italic;
-  font-size: 18px;
-}
-
 .xcode-container .left-side img{
   width: 1050px;
 }
@@ -943,15 +956,16 @@ body{
   position: relative;
   align-items: center;
   justify-content: center;
-  margin: 50px 100px 50px 100px;
+  margin: 50px 100px 0px 100px;
 }
 
 .firebase-container .left-side{
   width: 40%;
+  margin-left: 250px;
 }
 
 .firebase-container .right-side{
-  width: 60%;
+  width: 45%;
 }
 
 .firebase-container .left-side p{
@@ -959,20 +973,19 @@ body{
   margin-top: 20px;
 }
 
-.right-side .authentication{
+.firebase-container .left-side img{
+  width: 200px;
+  position: absolute;
+  top: 100px;
+  left: 00px;
+}
+
+.right-side .firebase{
   width: 100%;
   margin-top: 20px;
   border: 2px solid white
 }
 
-.firebase-container .right-side p{
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-style: italic;
-  font-size: 18px;
-}
 
 .left-side .firebase{
   width: 50%;
@@ -984,7 +997,7 @@ body{
   position: relative;
   align-items: center;
   justify-content: center;
-  margin: 50px 100px 50px 200px;
+  margin: 0px 100px 50px 100px;
 }
 
 .google-maps-container .left-side{
@@ -992,12 +1005,14 @@ body{
 }
 
 .google-maps-container .left-side img{
-  width: 500px;
+  margin-top: 0px;
+  width: 750px;
   border: 2px solid white
 }
 
 .google-maps-container .right-side{
-  margin-left: 200px;
+  margin-left: 75px;
+  margin-top: 0px;
 }
 
 .google-maps-container .right-side img{
@@ -1012,11 +1027,31 @@ body{
   margin-top: 20px;
 }
 
-.google-maps-container .left-side p{
-  margin-top: 20px;
+.figma-container{
   display: flex;
-  justify-content: center;
+  position: relative;
   align-items: center;
-  font-style: italic;
-  font-size: 18px;
+  justify-content: center;
+  margin: 0px 100px 50px 100px;
+}
+
+.figma-container .left-side img{
+  width: 200px;
+  position: absolute;
+  top: 100px;
+  left: 0px;
+}
+
+.figma-container .left-side{
+  width: 35%;
+  margin-left: 150px;
+}
+
+.figma-container .right-side{
+  width: 45%;
+  margin-left: 50px;
+}
+
+.figma-container .right-side img{
+  width: 850px;
 }
