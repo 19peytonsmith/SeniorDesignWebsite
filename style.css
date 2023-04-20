@@ -279,61 +279,12 @@
     padding: 0px;
     margin-top: 50px;
     margin-bottom: 0;
-    -webkit-animation: breathing 3s ease-out infinite normal;
-    animation: breathing 3s ease-out infinite normal;
     font-size: 16px;
     -webkit-font-smoothing: antialiased;
     border-radius: 2px;
     text-align: center;    
     }
 
-@-webkit-keyframes breathing {
-  0% {
-    -webkit-transform: scale(0.9);
-    transform: scale(0.9);
-  }
-
-  25% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-
-  60% {
-    -webkit-transform: scale(0.9);
-    transform: scale(0.9);
-  }
-
-  100% {
-    -webkit-transform: scale(0.9);
-    transform: scale(0.9);
-  }
-}
-
-@keyframes breathing {
-  0% {
-    -webkit-transform: scale(0.9);
-    -ms-transform: scale(0.9);
-    transform: scale(0.9);
-  }
-
-  25% {
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
-  }
-
-  60% {
-    -webkit-transform: scale(0.9);
-    -ms-transform: scale(0.9);
-    transform: scale(0.9);
-  }
-
-  100% {
-    -webkit-transform: scale(0.9);
-    -ms-transform: scale(0.9);
-    transform: scale(0.9);
-  }
-}
   .group-photo {
     display: flex;
     flex-direction: column;
@@ -673,14 +624,9 @@ body{
 }
 
 .abstract-text p{
-  transition: transform 5s ease;
   font-size: 20px;
   text-indent: 50px;
   padding-right: 100px;
-}
-
-.abstract-text p:hover{
-  transform: scale(1.1)
 }
 
 @-webkit-keyframes animate2 {
@@ -723,9 +669,6 @@ body{
   margin-bottom: 100px;
   padding: 0;
   color: rgb(209, 223, 159);
-  -webkit-animation: breathing 3s ease-out infinite normal;
-  animation: breathing 3s ease-out infinite normal;
-  -webkit-font-smoothing: antialiased;
 }
 
 .development > * {
@@ -746,9 +689,6 @@ body{
   margin: 0px;
   padding: 0;
   color: rgb(209, 223, 159);
-  -webkit-animation: breathing 3s ease-out infinite normal;
-  animation: breathing 3s ease-out infinite normal;
-  -webkit-font-smoothing: antialiased;
 }
 
 .evidencebook h3{
@@ -879,21 +819,6 @@ body{
   transform: scale(1.1);
 }
 
-.technology img{
-  transition: transform 1s ease;
-}
-
-.technology img:hover{
-  transform: scale(1.1)
-}
-
-.technology p{
-  transition: transform 5s ease;
-}
-
-.technology p:hover{
-  transform: scale(1.1)
-}
 .technology h2{
   font-weight:500;
   font-size: 80px;
@@ -904,9 +829,6 @@ body{
   margin: 0px;
   padding: 0;
   color: rgb(209, 223, 159);
-  -webkit-animation: breathing 3s ease-out infinite normal;
-  animation: breathing 3s ease-out infinite normal;
-  -webkit-font-smoothing: antialiased;
 }
 
 .technology h3{
@@ -1079,11 +1001,6 @@ body{
 
 .development img{
   border: 2px solid white;
-  transition: transform 1s ease-in
-}
-
-.development img:hover{
-  transform: scale(1.1)
 }
 .column p{
   width: 80%;
