@@ -127,7 +127,7 @@
     content: '';
     display: block;
     height:      150px;
-    margin-top: -80px;
+    margin-top: -150px;
     visibility: hidden;
   }
   
@@ -135,7 +135,7 @@
     content: '';
     display: block;
     height:      150px;
-    margin-top: -80px;
+    margin-top: -150px;
     visibility: hidden;
   }
 
@@ -482,6 +482,7 @@
 .bio-text p {
   font-size: 18px;
   line-height: 1.4em;
+  margin-top: 20px;
   margin-bottom: 0;
 }
 
@@ -710,6 +711,7 @@ body{
 .development{
   padding: 0px; 
   color: white;
+  margin: 0 100px 100px 100px;
 }
 .development h2{
   font-weight:500;
@@ -718,12 +720,16 @@ body{
   justify-content: center;
   align-items: center;
   letter-spacing: 1.5px;
-  margin: 0px;
+  margin-bottom: 100px;
   padding: 0;
   color: rgb(209, 223, 159);
   -webkit-animation: breathing 3s ease-out infinite normal;
   animation: breathing 3s ease-out infinite normal;
   -webkit-font-smoothing: antialiased;
+}
+
+.development > * {
+  margin-bottom: 100px;
 }
 
 .evidencebook{
@@ -1042,6 +1048,10 @@ body{
   left: 0px;
 }
 
+.figmadesign{
+  width: 850px;
+}
+
 .figma-container .left-side{
   width: 35%;
   margin-left: 150px;
@@ -1053,5 +1063,47 @@ body{
 }
 
 .figma-container .right-side img{
-  width: 850px;
+  border: 2px solid white
+}
+
+.time{
+  height: 450px;
+}
+.mp{
+  height: 600px;
+}
+
+.figma{
+  width: 800px;
+}
+
+.development img{
+  border: 2px solid white;
+  transition: transform 1s ease-in
+}
+
+.development img:hover{
+  transform: scale(1.1)
+}
+.column p{
+  width: 80%;
+  margin: 0;
+  margin-top: 50px;
+  letter-spacing: 1.5px;
+  background-color: rgb(21, 45, 82);
+  padding: 20px;
+}
+
+/* CSS for row layout */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* CSS for column layout */
+.column {
+  width: 50%;
+  float: left;
+  box-sizing: border-box;
 }
