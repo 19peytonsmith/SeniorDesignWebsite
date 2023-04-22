@@ -991,12 +991,29 @@ body{
 .time{
   height: 450px;
 }
+
 .mp{
+  margin-right: 50px;
+  float: right;
   height: 600px;
 }
 
 .figma{
   width: 800px;
+}
+.column{
+  padding: 0;
+  margin: 0;
+}
+.pushright{
+  padding: 0;
+  text-align: right;
+}
+
+.erdiagram{
+  margin-right: 50px;
+  float: right;
+  height: 800px;
 }
 
 .development img{
@@ -1005,7 +1022,6 @@ body{
 .column p{
   width: 80%;
   margin: 0;
-  margin-top: 50px;
   letter-spacing: 1.5px;
   background-color: rgb(21, 45, 82);
   padding: 20px;
@@ -1023,4 +1039,11 @@ body{
   width: 50%;
   float: left;
   box-sizing: border-box;
+}
+
+.development h4{
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+  font-size: 42px;
 }
